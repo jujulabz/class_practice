@@ -4,10 +4,26 @@ Then make an empty list called finished_sandwhiches. Loop throug the list of san
 and print a message for each order, such as "I made your tuna sandwich". As each sandwhich is made,
 move it to the list of finished sandwhiches. After all the sandwhiches have been made, print a message
 listing each sandwhich that was made.    
+
+adding 7-9
+No Pastrami
+using the list sandwich_orders from the previous exercise, make sure the sandiwch 'pastrami' appears in the 
+list at least three times. add code near the beginning of your program to print a message saying the deli has 
+run out of pastrami, and then use a while loop to remove all occurances of 'pastrami' from sandwich_orders. Make 
+sure no pastrami sandwhiches end up in finshed_sandwhiches. 
+
+
+
     """
     
-sandwich_orders = ['Ruben','Cuban','BLT','P B & J', 'hotdog']
 
+sandwich_orders = ['Ruben','Cuban','pastrami','BLT','P B & J','pastrami', 'hotdog','pastrami']
+
+print('The deli has ran out of pastrami')
+
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+    
 finished_orders = []
 
 while sandwich_orders:
